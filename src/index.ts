@@ -5,7 +5,7 @@ import { Plugin } from 'esbuild';
 
 import { Options } from './interface';
 
-export default ({ entry = 'public' }: Options = {}): Plugin => ({
+export = ({ entry = 'public' }: Options = {}): Plugin => ({
   name: 'public-directory',
   async setup(build) {
     const outdir: string =
