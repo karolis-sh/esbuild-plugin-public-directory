@@ -4,7 +4,8 @@
 [![Node.js CI](https://github.com/karolis-sh/esbuild-plugin-public-directory/actions/workflows/node.js.yml/badge.svg)](https://github.com/karolis-sh/esbuild-plugin-public-directory/actions/workflows/node.js.yml)
 [![License: MIT](https://img.shields.io/badge/license-mit-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Static assets implementation for [esbuild](https://esbuild.github.io/) pipeline.
+Static assets directory implementation for [esbuild](https://esbuild.github.io/)
+pipeline.
 
 ## Installation
 
