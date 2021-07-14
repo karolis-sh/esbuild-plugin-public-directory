@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.1...v0.0.2) (2021-07-14)
+
+
+### Bug Fixes
+
+* resolve plugin output format ([213b036](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/213b036f3bd850b134a2e8eb7473bb5d106170cc))
+
 ### 0.0.1 (2021-07-14)
 
 
