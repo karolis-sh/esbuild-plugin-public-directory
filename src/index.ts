@@ -34,6 +34,7 @@ export = ({ entry = 'public' }: Options = {}): Plugin => ({
         }
 
         if (exists) {
+          await fse.ensureDir(outdir);
           await fse.copy(entry, outdir);
         }
       }
