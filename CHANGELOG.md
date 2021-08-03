@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.2...v0.0.3) (2021-08-03)
+
+
+### Bug Fixes
+
+* handle missing entry entry with a warning ([2978c20](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/2978c20dc2480c971dd72de41a710211bf1768b1))
+* handle outdir creation race condition ([8cb4407](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/8cb440797e5e2175dfd759b5e7e6dc19bbce3825))
+
 ### [0.0.2](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.1...v0.0.2) (2021-07-14)
 
 
