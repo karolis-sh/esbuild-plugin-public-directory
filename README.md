@@ -10,13 +10,13 @@ pipeline.
 ## Installation
 
 ```bash
-npm i postcss esbuild-plugin-public-directory -D
+npm i esbuild-plugin-public-directory -D
 ```
 
 or
 
 ```bash
-yarn add postcss esbuild-plugin-public-directory --dev
+yarn add esbuild-plugin-public-directory --dev
 ```
 
 ## Usage
