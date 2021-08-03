@@ -5,8 +5,10 @@ import { Plugin } from 'esbuild';
 
 import { Options } from './interface';
 
+const NAME = 'public-directory';
+
 export = ({ entry = 'public' }: Options = {}): Plugin => ({
-  name: 'public-directory',
+  name: NAME,
   async setup(build) {
     const outdir: string =
       build.initialOptions.outdir || path.basename(build.initialOptions.outfile || '');
@@ -23,11 +25,20 @@ export = ({ entry = 'public' }: Options = {}): Plugin => ({
           .on('change', copy)
           .on('unlink', (filename) => fse.remove(filename));
       } else {
-        await fse
-          .access(entry)
-          .then(() => fse.copy(entry, outdir))
-          .catch(() => undefined);
+        let exists = false;
+        try {
+          await fse.access(entry);
+          exists = true;
+        } catch (err) {
+          return { warnings: [{ pluginName: NAME, text: err.toString() }] };
+        }
+
+        if (exists) {
+          await fse.ensureDir(outdir);
+          await fse.copy(entry, outdir);
+        }
       }
+      return null;
     });
   },
 });
