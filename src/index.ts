@@ -19,7 +19,7 @@ export = ({ entry: rawEntry = 'public' }: Options = {}): Plugin => ({
 
     const entry = absPathname(rawEntry);
     const outdir: string = absPathname(
-      build.initialOptions.outdir || path.basename(build.initialOptions.outfile || '')
+      build.initialOptions.outdir || path.dirname(build.initialOptions.outfile || '')
     );
 
     build.onStart(async () => {

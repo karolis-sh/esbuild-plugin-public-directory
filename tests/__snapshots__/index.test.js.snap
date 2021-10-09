@@ -33,3 +33,20 @@ Array [
   },
 ]
 `;
+
+exports[`should use outfile option 1`] = `
+Array [
+  Object {
+    "file": "specificied/data/test.json",
+    "size": 19,
+  },
+  Object {
+    "file": "specificied/robots.txt",
+    "size": 4,
+  },
+  Object {
+    "file": "specificied/sample.js",
+    "size": 30,
+  },
+]
+`;

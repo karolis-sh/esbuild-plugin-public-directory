@@ -28,6 +28,7 @@
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
     "lint:types": "tsc --noEmit",
     "test": "jest",
+    "tdd": "run-p dev 'test --watch'",
     "qa": "run-p lint test",
     "release": "yarn && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
     "prepare": "husky install"
