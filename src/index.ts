@@ -7,11 +7,20 @@ import { Options } from './interface';
 
 const NAME = 'public-directory';
 
-export = ({ entry = 'public' }: Options = {}): Plugin => ({
+export = ({ entry: rawEntry = 'public' }: Options = {}): Plugin => ({
   name: NAME,
   async setup(build) {
-    const outdir: string =
-      build.initialOptions.outdir || path.basename(build.initialOptions.outfile || '');
+    const absPathname = (pathname: string): string => {
+      if (!path.isAbsolute(pathname) && build.initialOptions.absWorkingDir) {
+        return path.join(build.initialOptions.absWorkingDir, pathname);
+      }
+      return pathname;
+    };
+
+    const entry = absPathname(rawEntry);
+    const outdir: string = absPathname(
+      build.initialOptions.outdir || path.basename(build.initialOptions.outfile || '')
+    );
 
     build.onStart(async () => {
       if (build.initialOptions.watch) {

@@ -26,3 +26,16 @@ it('should use outdir option', async () => {
 
   expect(getResult(dir)).toMatchSnapshot();
 });
+
+it('should respect absWorkingDir option', async () => {
+  const dir = path.join(TEMP_DIR, 'absWorkingDir-1');
+
+  await build({
+    entryPoints: ['src/index.js'],
+    outdir: dir,
+    plugins: [publicDir()],
+    absWorkingDir: __dirname,
+  });
+
+  expect(getResult(dir)).toMatchSnapshot();
+});
