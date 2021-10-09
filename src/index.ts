@@ -11,7 +11,7 @@ export = ({ entry = 'public' }: Options = {}): Plugin => ({
   name: NAME,
   async setup(build) {
     const outdir: string =
-      build.initialOptions.outdir || path.basename(build.initialOptions.outfile || '');
+      build.initialOptions.outdir || path.dirname(build.initialOptions.outfile || '');
 
     build.onStart(async () => {
       if (build.initialOptions.watch) {
