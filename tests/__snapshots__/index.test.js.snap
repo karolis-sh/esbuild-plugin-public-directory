@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should use outdir option 1`] = `
+Array [
+  Object {
+    "file": "data/test.json",
+    "size": 19,
+  },
+  Object {
+    "file": "index.js",
+    "size": 30,
+  },
+  Object {
+    "file": "robots.txt",
+    "size": 4,
+  },
+]
+`;
