@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-public-directory",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Static assets directory for esbuild pipeline",
   "keywords": [
     "esbuild",

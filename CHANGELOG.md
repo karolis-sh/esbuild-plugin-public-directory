@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.3...v0.0.4) (2021-10-09)
+
+
+### Bug Fixes
+
+* properly resolve destination from esbuild outfile option ([506213e](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/506213ea412b8eccfcc7df30c1a4a8f111b192f2))
+* respect absWorkingDir esbuild option ([d982a25](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/d982a2522cd4ad89e09a30dd68678353b4bcda56))
+
 ### [0.0.3](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.2...v0.0.3) (2021-08-03)
 
 
