@@ -37,11 +37,6 @@
     "**/package.json": "sort-package-json",
     "*.{js,ts}": "eslint --fix"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "chokidar": "^3.5.2",
     "fs-extra": "^10.0.0"
