@@ -50,6 +50,7 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@k.sh/eslint-config": "^1.21.2",
+    "@k.sh/typescript-config": "^0.3.0",
     "@types/fs-extra": "^9.0.12",
     "@types/node": "^16.3.1",
     "cz-conventional-changelog": "^3.3.0",
