@@ -39,7 +39,7 @@ export = ({ entry: rawEntry = 'public' }: Options = {}): Plugin => ({
           await fse.access(entry);
           exists = true;
         } catch (err) {
-          return { warnings: [{ pluginName: NAME, text: err.toString() }] };
+          return { warnings: [{ pluginName: NAME, text: (err as Error).toString() }] };
         }
 
         if (exists) {
