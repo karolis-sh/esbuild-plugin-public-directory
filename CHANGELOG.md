@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.4...v0.0.5) (2022-02-19)
+
+
+### Bug Fixes
+
+* remove unnecessary postcss peer dep ([e3ecd0a](https://github.com/karolis-sh/esbuild-plugin-public-directory/commit/e3ecd0ad633c212e4ba2f052ae541718414bf532))
+
 ### [0.0.4](https://github.com/karolis-sh/esbuild-plugin-public-directory/compare/v0.0.3...v0.0.4) (2021-10-09)
 
 
