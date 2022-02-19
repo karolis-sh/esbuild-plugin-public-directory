@@ -1,6 +1,6 @@
-import path from 'path';
-import fse from 'fs-extra';
-import chokidar from 'chokidar';
+import * as path from 'path';
+import * as fse from 'fs-extra';
+import * as chokidar from 'chokidar';
 import { Plugin } from 'esbuild';
 
 import { Options } from './interface';

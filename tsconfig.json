@@ -3,7 +3,6 @@
   "compilerOptions": {
     "sourceMap": true,
     "removeComments": true,
-    "esModuleInterop": true,
     "outDir": "lib"
   },
   "include": ["src"]
