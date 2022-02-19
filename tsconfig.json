@@ -1,9 +1,4 @@
 {
   "extends": "@k.sh/typescript-config/config.json",
-  "compilerOptions": {
-    "sourceMap": true,
-    "removeComments": true,
-    "outDir": "lib"
-  },
-  "include": ["src"]
+  "include": ["src", "__tests__"]
 }

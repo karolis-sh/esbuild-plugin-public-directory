@@ -9,7 +9,7 @@
       "files": ["**/*.ts", "**/*.tsx"],
       "extends": ["@k.sh/eslint-config-typescript"],
       "parserOptions": {
-        "project": "./tsconfig.eslint.json"
+        "project": "./tsconfig.json"
       }
     }
   ]
