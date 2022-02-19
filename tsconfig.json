@@ -1,10 +1,4 @@
 {
-  "extends": "@k.sh/eslint-config/typescript/config.json",
-  "compilerOptions": {
-    "sourceMap": true,
-    "removeComments": true,
-    "esModuleInterop": true,
-    "outDir": "lib"
-  },
-  "include": ["src"]
+  "extends": "@k.sh/typescript-config/config.json",
+  "include": ["src", "__tests__"]
 }
