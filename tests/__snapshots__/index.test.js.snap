@@ -1,52 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should respect absWorkingDir option 1`] = `
-Array [
-  Object {
-    "file": "data/test.json",
-    "size": 19,
-  },
-  Object {
-    "file": "index.js",
-    "size": 30,
-  },
-  Object {
-    "file": "robots.txt",
-    "size": 4,
-  },
-]
+{
+  "data/test.json": "identical",
+  "index.js": true,
+  "robots.txt": "identical",
+}
 `;
 
 exports[`should use outdir option 1`] = `
-Array [
-  Object {
-    "file": "data/test.json",
-    "size": 19,
-  },
-  Object {
-    "file": "index.js",
-    "size": 30,
-  },
-  Object {
-    "file": "robots.txt",
-    "size": 4,
-  },
-]
+{
+  "data/test.json": "identical",
+  "index.js": true,
+  "robots.txt": "identical",
+}
 `;
 
 exports[`should use outfile option 1`] = `
-Array [
-  Object {
-    "file": "specificied/data/test.json",
-    "size": 19,
-  },
-  Object {
-    "file": "specificied/robots.txt",
-    "size": 4,
-  },
-  Object {
-    "file": "specificied/sample.js",
-    "size": 30,
-  },
-]
+{
+  "specificied/data/test.json": "identical",
+  "specificied/index.js": true,
+  "specificied/robots.txt": "identical",
+}
 `;

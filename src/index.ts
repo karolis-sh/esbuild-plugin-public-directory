@@ -1,7 +1,8 @@
 import * as path from 'path';
-import * as fse from 'fs-extra';
+
 import * as chokidar from 'chokidar';
 import { Plugin } from 'esbuild';
+import * as fse from 'fs-extra';
 
 import { Options } from './interface';
 
@@ -19,7 +20,8 @@ export = ({ entry: rawEntry = 'public' }: Options = {}): Plugin => ({
 
     const entry = absPathname(rawEntry);
     const outdir: string = absPathname(
-      build.initialOptions.outdir || path.dirname(build.initialOptions.outfile || '')
+      build.initialOptions.outdir ||
+        path.dirname(build.initialOptions.outfile || ''),
     );
 
     build.onStart(async () => {
@@ -39,7 +41,9 @@ export = ({ entry: rawEntry = 'public' }: Options = {}): Plugin => ({
           await fse.access(entry);
           exists = true;
         } catch (err) {
-          return { warnings: [{ pluginName: NAME, text: (err as Error).toString() }] };
+          return {
+            warnings: [{ pluginName: NAME, text: (err as Error).toString() }],
+          };
         }
 
         if (exists) {
