@@ -1,7 +1,8 @@
 const os = require('os');
 const path = require('path');
-const { build } = require('esbuild');
+
 const dirTree = require('directory-tree');
+const { build } = require('esbuild');
 
 const publicDir = require('../lib');
 
