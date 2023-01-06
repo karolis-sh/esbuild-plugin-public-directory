@@ -13,7 +13,10 @@ const getResult = (dir) => {
   return result;
 };
 
-const TEMP_DIR = path.join(os.tmpdir(), `esbuild-plugin-public-directory/${Date.now()}`);
+const TEMP_DIR = path.join(
+  os.tmpdir(),
+  `esbuild-plugin-public-directory/${Date.now()}`,
+);
 
 it('should use outdir option', async () => {
   const dir = path.join(TEMP_DIR, 'outdir-1');
